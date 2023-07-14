@@ -1,0 +1,12 @@
+[book]
+title = "Web-разработка"
+description = "Курс по основам Web-разработки на JavaScript"
+authors = ["Jvst Me <me@jvst.me>"]
+multilingual = false
+language = "ru"
+src = "src"
+
+[output.html]
+git-repository-url = "https://github.com/jvstme/grasp-webdev"
+mathjax-support = true
+site-url = "/webdev/"
