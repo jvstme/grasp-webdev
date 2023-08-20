@@ -26,4 +26,4 @@
     - [Метод массивов splice](js/array_method_splice.md)
     - [Метод массивов slice](js/array_method_slice.md)
     - [Изменяемость массивов](js/array_mutability.md)
-    - [Элементы и отрезки строк](js/string_indices_and_substrings.md)
+    - [Индексы строк и подстроки](js/string_indices_and_substrings.md)
