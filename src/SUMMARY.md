@@ -27,3 +27,4 @@
     - [Метод массивов slice](js/array_method_slice.md)
     - [Изменяемость массивов](js/array_mutability.md)
     - [Индексы строк и подстроки](js/string_indices_and_substrings.md)
+    - [Поиск подстроки](js/substring_search.md)
