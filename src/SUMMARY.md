@@ -29,3 +29,4 @@
     - [Индексы строк и подстроки](js/string_indices_and_substrings.md)
     - [Поиск подстроки](js/substring_search.md)
     - [Смена регистра строки](js/converting_string_case.md)
+    - [Удаление пробельных символов](js/trimming_whitespace.md)
