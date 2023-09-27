@@ -32,3 +32,4 @@
     - [Удаление пробельных символов](js/trimming_whitespace.md)
     - [Разбиение на подстроки](js/splitting_strings.md)
     - [Объединение массива строк](js/joining_arrays_of_strings.md)
+    - [Функции](js/functions.md)
