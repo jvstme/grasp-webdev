@@ -33,3 +33,4 @@
     - [Разбиение на подстроки](js/splitting_strings.md)
     - [Объединение массива строк](js/joining_arrays_of_strings.md)
     - [Функции](js/functions.md)
+    - [Параметры по умолчанию](js/default_parameters.md)
