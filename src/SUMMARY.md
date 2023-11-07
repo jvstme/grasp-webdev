@@ -34,3 +34,4 @@
     - [Объединение массива строк](js/joining_arrays_of_strings.md)
     - [Функции](js/functions.md)
     - [Параметры по умолчанию](js/default_parameters.md)
+    - [Функции как аргументы функций](js/functions_as_function_arguments.md)
