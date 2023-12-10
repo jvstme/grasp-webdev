@@ -36,3 +36,4 @@
     - [Параметры по умолчанию](js/default_parameters.md)
     - [Функции как аргументы функций](js/functions_as_function_arguments.md)
     - [Объекты](js/objects.md)
+    - [Изменяемость объектов](js/objects_mutability.md)
