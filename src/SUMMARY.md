@@ -38,3 +38,4 @@
     - [Объекты](js/objects.md)
     - [Изменяемость объектов](js/objects_mutability.md)
     - [Динамический доступ к свойствам объекта](js/dynamic_property_access.md)
+    - [Итерация по свойствам объекта](js/iterating_over_object_properties.md)
