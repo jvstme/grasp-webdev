@@ -1,5 +1,7 @@
 # Summary
 
+[Web-разработка](index.md)
+
 - [JavaScript](js/index.md)
     - [Начало работы с JavaScript](js/getting_started.md)
     - [Переменные и числа](js/variables_and_numbers.md)
@@ -39,3 +41,7 @@
     - [Изменяемость объектов](js/objects_mutability.md)
     - [Динамический доступ к свойствам объекта](js/dynamic_property_access.md)
     - [Итерация по свойствам объекта](js/iterating_over_object_properties.md)
+
+- [Web APIs](web_apis/index.md)
+    - [Document Object Model (DOM)](web_apis/dom.md)
+    - [Поиск элементов в DOM](web_apis/querying_dom_elements.md)
