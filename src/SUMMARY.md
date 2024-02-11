@@ -46,3 +46,4 @@
     - [Document Object Model (DOM)](web_apis/dom.md)
     - [Поиск элементов в DOM](web_apis/querying_dom_elements.md)
     - [Работа с текстом элемента](web_apis/working_with_element_text.md)
+    - [Поиск элементов внутри других элементов](web_apis/querying_elements_inside_other_elements.md)
