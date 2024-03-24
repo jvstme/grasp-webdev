@@ -49,3 +49,4 @@
     - [Поиск элементов внутри других элементов](web_apis/querying_elements_inside_other_elements.md)
     - [События](web_apis/events.md)
     - [Поля ввода](web_apis/input_fields.md)
+    - [События полей ввода](web_apis/input_fields_events.md)
