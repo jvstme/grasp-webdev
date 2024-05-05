@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  MDBOOK_VER: 0.4.36
+  MDBOOK_VER: 0.4.37
 
 jobs:
   deploy:
