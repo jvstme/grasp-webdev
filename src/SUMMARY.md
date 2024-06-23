@@ -52,3 +52,4 @@
     - [События полей ввода](web_apis/input_fields_events.md)
     - [Добавление и удаление элементов в DOM](web_apis/adding_and_removing_elements_in_dom.md)
     - [Навигация по DOM](web_apis/navigating_dom.md)
+    - [Работа с классами элементов](web_apis/working_with_element_classes.md)

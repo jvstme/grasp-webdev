@@ -1,0 +1,96 @@
+# Работа с классами элементов
+
+Каждому элементу на странице может быть присвоен один или несколько классов. Классы полезны для того, чтобы отличать элементы друг от друга и, например, применять стили только к элементам конкретного класса.
+
+В HTML классы присваиваются через атрибут `class`. Несколько классов можно указать через пробел.
+
+```html
+<div class="c1 c2"></div>
+```
+
+Набор классов элемента можно просматривать и изменять через JavaScript. Для этого каждый элемент имеет свойство `classList`. Свойство содержит объект типа `DOMTokenList`, схожий с массивами и содержащий текущий набор классов данного элемента.
+
+```js
+const div = document.querySelector("div");
+div.classList;  // Возвращает: DOMTokenList [ "c1", "c2" ]
+
+// Выводит сначала "c1", потом "c2"
+for (let i = 0; i < div.classList.length; i++) {
+    console.log(div.classList[i]);
+}
+```
+
+`DOMTokenList` также имеет ряд удобных методов. Рассмотрим некоторые из них.
+
+### Метод `contains`
+
+Возвращает `true`, если элементу присвоен указанный класс, иначе `false`.
+
+```js
+div.classList.contains("c1");  // Возвращает: true
+div.classList.contains("c9");  // Возвращает: false
+```
+
+### Метод `add`
+
+Добавляет элементу один или несколько классов. При этом каждый класс может присутствовать в списке классов только один раз, поэтому если попытаться добавить уже существующий класс, то во второй раз в списке он не появится.
+
+```js
+div.classList.add("c3");
+div.classList;  // Возвращает: DOMTokenList [ "c1", "c2", "c3" ]
+div.classList.add("c1");
+div.classList;  // Возвращает: DOMTokenList [ "c1", "c2", "c3" ]
+div.classList.add("c4", "c5");
+div.classList;  // Возвращает: DOMTokenList [ "c1", "c2", "c3", "c4", "c5" ]
+```
+
+### Метод `remove`
+
+Убирает один или несколько классов элемента. Если какого-то класса на элементе и так нет, то такой класс проигнорируется.
+
+```js
+div.classList.remove("c5");
+div.classList;  // Возвращает: DOMTokenList [ "c1", "c2", "c3", "c4" ]
+div.classList.remove("c2", "c3", "c4");
+div.classList;  // Возвращает: DOMTokenList [ "c1" ]
+div.classList.remove("c0", "c1");
+div.classList;  // Возвращает: DOMTokenList []
+```
+
+## Пример
+
+Это страница со скриптом, который генерирует и отображает список чисел от 1 до 50, при этом круглые числа выделяет полужирным шрифтом.
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body></body>
+</html>
+```
+```css
+.round-number {
+    font-weight: bold;
+}
+```
+```js
+const ul = document.createElement("ul");
+
+for (let i = 1; i <= 50; i++) {
+    const li = document.createElement("li");
+    li.innerText = i;
+    if (i % 10 === 0) {
+        li.classList.add("round-number");
+    }
+    ul.appendChild(li);
+}
+
+document.querySelector("body").appendChild(ul);
+```
+
+## Упражнения
+
+1. Реализуй страницу для обучения детей понятию кратности. На странице отображается таблица 10x10 ячеек, в каждой ячейке написан её порядковый номер от 1 до 100. Рядом с таблицей есть поле ввода. Когда учитель меняет число в поле, в таблице должны цветом выделяться все ячейки с номерами, кратными указанному числу.
